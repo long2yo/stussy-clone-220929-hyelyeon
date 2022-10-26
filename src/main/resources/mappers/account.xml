@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stussy.stussyclone220929hyelyeon.repository.AccountRepository">
+    <insert id="save" parameterType="com.stussy.stussyclone220929hyelyeon.domain.User">
+        insert into
+        user_mst
+        values
+        0,
+        #{username},
+        #{oauth_username},
+        #{password},
+        #{name},
+        #{email},
+        #{provider},
+        1
+        now(),
+        now()
+
+    </insert>
+</mapper>
