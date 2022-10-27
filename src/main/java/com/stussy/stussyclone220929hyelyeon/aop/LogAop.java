@@ -20,7 +20,7 @@ public class LogAop {
 
     }
 
-    @Pointcut("@execution(* com.stussy.stussyclone220929hyelyeon.controller.api..*.*(..))")
+    @Pointcut("execution(* com.stussy.stussyclone220929hyelyeon.controller.api..*.*(..))")
     private void executionPointCut() {}
 
     @Around("annotationPointCut()")
