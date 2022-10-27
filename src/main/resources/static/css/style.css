@@ -14,12 +14,17 @@ body, html{
     margin: 0px;
 }
 
-input {
+input, select, textarea {
     margin-bottom: 15px;
     border: 1px solid rgb(198, 198, 198);
     padding: 10px;
 
     width: 100%;
+}
+
+input:focus, select:focus, textarea:focus{
+    outline: none;
+    border: 1px solid black;
 }
 
 @keyframes button-fadein{
@@ -59,11 +64,6 @@ input {
 
     }
 }    
-
-input:focus {
-    outline: none;
-    border: 1px solid black;
-}
 
 button{
     margin-bottom: 10px;
@@ -106,4 +106,8 @@ ul{
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+main{
+    margin-top: 60px;
 }
