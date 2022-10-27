@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class Role {
     private int id;
-    private String name;
+    private String role;
     private String role_name;
 
 }

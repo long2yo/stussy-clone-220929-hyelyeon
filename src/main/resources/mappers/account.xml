@@ -5,8 +5,7 @@
 <mapper namespace="com.stussy.stussyclone220929hyelyeon.repository.AccountRepository">
     <resultMap id="role" type="com.stussy.stussyclone220929hyelyeon.domain.Role">
         <result property="id" column="id"></result>
-        <result property="id" column="id"></result>
-        <result property="role" column="rold"></result>
+        <result property="role" column="role"></result>
         <result property="role_name" column="role_name"></result>
     </resultMap>
 

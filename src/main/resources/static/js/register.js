@@ -2,7 +2,7 @@ const registerButton = document.querySelector(".login-button");
 const registerInputs = document.querySelectorAll(".login-input");
 
 //enter누르면 회원가입 되기!
-for(let i = 0; i< registerInputs.length; i++){
+for(let i = 0; i < registerInputs.length; i++) {
     registerInputs[i].onkeyup = () => {
             if(window.event.keyCode == 13){
                 if(i != 3){
@@ -40,20 +40,20 @@ registerButton.onclick = () => {
             validationError(error.responseJSON.data);
         }
 
-    })
+    });
 }
 
 function validationError(error) {
     const accountErrors = document.querySelector(".account-errors");
     const accountErrorList = accountErrors.querySelector("ul");
 
-    const errorsValues = Object.values(error);
+    const errorValues = Object.values(error);
 
     accountErrorList.innerHTML = "";
 
-    errorsValues.forEach((value) => {
+    errorValues.forEach((value) => {
         accountErrorList.innerHTML += `
-                <li>${value}</li>
+            <li>${value}</li>
         `;
 
     });

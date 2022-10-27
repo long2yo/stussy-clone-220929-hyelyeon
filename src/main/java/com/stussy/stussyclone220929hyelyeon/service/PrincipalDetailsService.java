@@ -2,6 +2,7 @@ package com.stussy.stussyclone220929hyelyeon.service;
 
 import com.stussy.stussyclone220929hyelyeon.domain.User;
 import com.stussy.stussyclone220929hyelyeon.repository.AccountRepository;
+import com.stussy.stussyclone220929hyelyeon.service.auth.PrincipalDetails;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -26,6 +27,6 @@ public class PrincipalDetailsService implements UserDetailsService {
         }
 //        log.info("email >> {}", email);
 
-        return null;
+        return new PrincipalDetails(user);
     }
 }
